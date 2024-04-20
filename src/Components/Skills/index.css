@@ -1,0 +1,123 @@
+.skills-header-container{
+    padding: 0px 50px 0px 50px;
+}
+
+.skill-card{
+    /* border: 1px solid #0fe2ff; */
+    background-color: black;
+    width: 45%;
+    height: 12rem;
+    margin-bottom: 30px;
+    box-shadow: 2px 5px 5px 5px #0fe2ff;
+    border-radius: 8px;
+    position: relative;
+    transition: all ease 0.4s;
+}
+.skill-card:hover{
+    transform: scale(1.04);
+}
+.skill-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.content-container{
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 128, 128, 0.5);
+    opacity: 0;
+}
+.content-container:hover{
+    opacity: 1;
+}
+.content-container > *{
+    transform: translateY(25px);
+    transition: transform 0.4s;
+}
+.content-container:hover > *{
+    transform: translateY(0px);
+}
+.skill-name{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+.separator{
+    border: 1px solid #0fe2ff;
+}
+
+.skills-head{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.skills-des{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.tools-list-container{
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.tools-header-container{
+    padding: 0px 50px 0px 50px;
+    margin-top: 4rem;
+}
+
+@media screen and ((min-width: 501px)){
+    .skills-list-container{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 805px){
+    .skills-head{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .skills-des{
+        font-size: 1.5rem;
+    }
+    .skill-card{
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 645px){
+    .skill-card{
+        height: 8rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .skill-card{
+        height: 7rem;
+        width: 70%;
+    }
+    .skills-list-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 30px;
+    }
+}

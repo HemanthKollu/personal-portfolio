@@ -1,0 +1,159 @@
+.image{
+    height: 350px;  
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.img-container{
+    border: 3px solid #0fe2ff;
+    padding: 20px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 10px cyan, 0 0 20px cyan;
+
+}
+.img-container:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+
+}
+
+.head{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.name{
+    font-family: "cursive";
+    color: #0fe2ff;
+}
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    color: #0fe2ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .typing-animation span {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    animation: typing 4s infinite;
+  }
+  
+  .typing-animation .cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.1em;
+    height: 1.1em;
+    background: #0fe2ff;
+    animation: blink-caret 1s step-end infinite;
+  }
+  
+  @keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+  }
+  
+  @keyframes blink-caret {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: orange; }
+  }
+  
+.description{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.icon{
+    margin-left: 30px;
+    border: 1px solid #0fe2ff;
+    border-radius: 50%;
+    padding: 5px;
+    color: #0fe2ff;
+    transition: all ease 0.4s;
+}
+.icon:hover{
+    background-color: #0fe2ff;
+    color: #fff;
+    box-shadow: 0 0 20px cyan;
+}
+.icons-container{
+    margin-bottom: 20px;
+}
+.resume-btn{
+    padding: 15px 30px 15px 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: transparent;
+    transition: all ease 0.4s;
+    border: 1px solid #0fe2ff;
+    color: #0fe2ff;
+}
+.resume-link{
+    color: #081b29;
+}
+.resume-btn:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    background-color: #0fe2ff;
+    color: #081b29;
+}
+
+@media screen and (min-width: 706px){
+    .home-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px 0px 50px;
+        min-height: 100vh;
+    }
+    .sm-home-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 705px){
+    .sm-home-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px 0px 50px;
+        /* min-height: 100vh; */
+    }
+    .home-container{
+        display: none;
+    }
+    .image{
+        height: 200px;
+    }
+    .head{
+        font-size: 2rem;
+    }
+    .text-content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .description{
+        text-align: center;
+    }
+    .sm-icons-container{
+        margin-left: -20px;
+        margin-bottom: 20px;
+    }
+    .resume-btn{
+        align-self: center;
+    }
+
+}

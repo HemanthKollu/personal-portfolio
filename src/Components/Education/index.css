@@ -1,0 +1,92 @@
+.education-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-column-container{
+    border-left: 3px solid #0fe2ff;
+    padding-left: 20px;
+    position: relative;
+}
+.eduction-column-details-container{
+    padding: 0px 50px 0px 50px;
+}
+.content-list-container{
+    list-style-type: none;
+}
+.content-list-card{
+    border: 2px solid #0fe2ff;
+    width: 90%;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px 40px 20px 40px;
+    border-radius: 8px;
+    transition: all ease 0.4s;
+}
+.content-list-card::before{
+    content: '';
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    top:-0.3rem;
+    left: -2.3rem;
+    border-radius: 50px;
+    background: #0fe2ff;
+}
+.content-list-card:hover{
+    background-color: rgb(15, 226, 255, 0.6);
+    transform: translateZ(100px);
+    transition: transform 0.4s;
+}
+.details-icon-container{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.location{
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 700px){
+    .education-head{
+        font-size: 4rem;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .content-list-card{
+        width: 80%;
+    }
+    .education-head{
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .school-name{
+        font-size: 1.2rem;
+    }
+    .location{
+        font-size: 1rem;
+    }
+    .education-icon{
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .content-list-card{
+        width: 70%;
+    }
+    .school-name{
+        font-size: 0.7rem;
+    }
+    .location{
+        font-size: 0.7rem;
+    }
+    .education-icon{
+        height: 15px;
+    }
+}

@@ -1,0 +1,114 @@
+.projects-list{
+    width: 45%;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 0.4s;
+}
+.projects-list:hover{
+    transform: scale(1.04);
+}
+.visit-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgb(250, 250, 250,0.2);
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+.visit-container:hover{
+    opacity: 1;
+}
+.visit-container > *{
+    transform: translateY(25px);
+    transition: transform 0.4s;
+}
+.visit-container:hover > *{
+    transform: translateY(0px);
+}
+.project-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+    object-fit: cover;
+}
+
+.view-icon{
+ color: #0fe2ff;
+ margin-right: 20px;
+ cursor: pointer;
+}
+.project-name{
+    color: #0fe2ff;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 769px){
+    .projects-list-container{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .projects-list{
+        height: 250px;
+    }
+    .projects-list-container{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .project-name{
+        font-size: 1.3rem;
+    }
+    .view-icon{
+        height: 20px;
+    }
+    .projects-icon-container{
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .projects-list{
+        height: 200px;
+        width: 70%;
+    }
+    .projects-list-container{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .project-name{
+        font-size: 1.2rem;
+    }
+    .view-icon{
+        height: 17px;
+    }
+    .icons-container{
+        margin-left: 20px;
+    }
+}
